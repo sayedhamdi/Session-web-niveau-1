@@ -1,0 +1,32 @@
+.card {
+  background: cyan;
+  width: 600px;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 4px 8px 16px;
+}
+.card-img {
+  width: 50%;
+  border-radius: 40px;
+}
+.card-title {
+  color: brown;
+  font-size: 40px;
+  font-family: "courier new";
+}
+.card-description {
+  font-family: "courier new";
+}
+.card-icon {
+  width: 60px;
+  margin: 0px 20px;
+}
+
+.card img {
+  border: 5px solid black;
+}
+
+.card:hover {
+  background: #0ba0a0;
+  width: 650px;
+}
