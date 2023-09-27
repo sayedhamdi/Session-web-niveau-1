@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="x" />
+    <input type="text" id="y" />
+    <button onclick="ajmaa()">+</button>
+    <button onclick="atra7()">-</button>
+    <button>*</button>
+    <button>/</button>
+
+    <h1>resultat =</h1>
+    <span id="resultat"> </span>
+  </body>
+  <script>
+    function ajmaa() {
+      let x = document.querySelector("#x").value;
+      let y = document.querySelector("#y").value;
+      console.log();
+      console.log();
+      let z = Number(x) + Number(y);
+      console.log(z);
+      document.querySelector("#resultat").innerHTML = z;
+    }
+    function atra7() {
+      let x = document.querySelector("#x").value;
+      let y = document.querySelector("#y").value;
+      console.log();
+      console.log();
+      let z = Number(x) - Number(y);
+      console.log(z);
+      document.querySelector("#resultat").innerHTML = z;
+    }
+  </script>
+</html>
