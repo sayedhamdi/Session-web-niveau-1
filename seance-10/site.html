@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 30px;
+        position: relative;
+        height: 100px;
+      }
+      .links {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 20px;
+        padding-right: 100px;
+      }
+      .logo {
+        padding-left: 40px;
+      }
+      button {
+        width: 200px;
+        height: 60px;
+        font-size: 25px;
+      }
+      .btn-mobile {
+        display: none;
+      }
+      .mobile-links {
+        display: none;
+      }
+      @media (max-width: 740px) {
+        .links {
+          display: none;
+        }
+        .btn-mobile {
+          display: block;
+        }
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .mobile-links {
+        background: green;
+        top: 100px;
+        width: 100%;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <b class="logo">logo</b>
+      <ul class="links">
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">services</a></li>
+        <button>login</button>
+      </ul>
+
+      <button class="btn-mobile" onclick="afficherMenu()">mobile</button>
+      <ul class="mobile-links">
+        <li><a href="">home</a></li>
+        <li><a href="">about</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">services</a></li>
+        <button>login</button>
+      </ul>
+    </nav>
+    <script>
+      let menuOpen = false;
+      function afficherMenu() {
+        let menu = document.querySelector(".mobile-links");
+        if (menuOpen == true) {
+          menu.style.display = "none";
+          menuOpen = false;
+        } else {
+          menu.style.display = "flex";
+          menuOpen = true;
+        }
+      }
+    </script>
+  </body>
+</html>

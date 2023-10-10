@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @media (min-width: 1000px) and (max-width: 1100px) {
+        body {
+          background: green;
+        }
+      }
+      h1 {
+        background: orange;
+      }
+      h1 {
+        background: red;
+      }
+      @media (max-width: 1100px) {
+        body {
+          background: blue;
+        }
+      }
+      @media print, screen and (max-width: 300px) {
+        h1 {
+          color: yellow;
+        }
+        body {
+          background-color: blue;
+          font-size: 100px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello</h1>
+  </body>
+</html>

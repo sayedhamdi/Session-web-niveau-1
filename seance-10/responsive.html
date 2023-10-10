@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 100%;
+      }
+      .parent {
+        width: 400px;
+      }
+      .parent h1 {
+        font-size: 50px;
+        color: red;
+      }
+      @media (max-width: 500px) {
+        .parent h1 {
+          font-size: 30px;
+          color: orange;
+        }
+        .grand-parent {
+          flex-wrap: wrap;
+        }
+      }
+      .grand-parent {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grand-parent">
+      <div class="parent">
+        <img src="trump.jpeg" alt="" />
+        <h1>trump</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum
+          itaque magni porro reprehenderit facere quos pariatur dignissimos
+          dolorum! Ea odit esse possimus ab eum nihil quos unde numquam placeat?
+        </p>
+      </div>
+      <div class="parent">
+        <img src="trump.jpeg" alt="" />
+        <h1>trump</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum
+          itaque magni porro reprehenderit facere quos pariatur dignissimos
+          dolorum! Ea odit esse possimus ab eum nihil quos unde numquam placeat?
+        </p>
+      </div>
+      <div class="parent">
+        <img src="trump.jpeg" alt="" />
+        <h1>trump</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum
+          itaque magni porro reprehenderit facere quos pariatur dignissimos
+          dolorum! Ea odit esse possimus ab eum nihil quos unde numquam placeat?
+        </p>
+      </div>
+      <div class="parent">
+        <img src="trump.jpeg" alt="" />
+        <h1>trump</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum harum
+          itaque magni porro reprehenderit facere quos pariatur dignissimos
+          dolorum! Ea odit esse possimus ab eum nihil quos unde numquam placeat?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
